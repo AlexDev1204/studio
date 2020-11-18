@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="desctop-nav">
             <a class="nav_link" href="">Main</a>
             <a class="nav_link" href="">Our project</a>
             <a class="nav_link" href="">About</a>
@@ -17,6 +17,22 @@
             <a class="nav_link" href="">Contacts</a>
 
         </nav>
+        <div id="burger">
+            <img src="./img/close.png" alt="" id="close" />
+            <img src="./img/burger.png" alt="" id="open" />
+            <div id="menu">
+              <a href="" class="link-burger">Main</a>
+              <a href="" class="link-burger">Our project</a>
+              <a href="" class="link-burger">About</a>
+              <a href="" class="link-burger">News</a>
+              <a href="" class="link-burger">Contacts</a>
+            </div>
+        </div>
+        <div>
+            <div class="button_arrow">
+                <img class="but_arr_up" src="./img/button_arrow.svg" alt="arrow-button">
+            </div>
+        </div>
     </header>
     <section id="main">
         <h3>Where does it come from?</h3>
@@ -125,7 +141,7 @@
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
                 <a class="high-link" href="">Details</a>    
             </div>
-            <div class="gall-el">
+            <div class="gall-el element-revers">
                 <img class="foto" src="./img/foto.png" alt="foto">
                 <h3><span class="span-h3">01. </span>Research and packaging</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -146,8 +162,8 @@
         <div class="img-cod">
             <img class="cod-img" src="./img/cod.png" alt="cod-img">
             <img class="cod-img" src="./img/cod.png" alt="cod-img">
-            <img class="cod-img" src="./img/cod.png" alt="cod-img">
-            <img class="cod-img" src="./img/cod.png" alt="cod-img">
+            <img class="cod-img mig" src="./img/cod.png" alt="cod-img">
+            <img class="cod-img mig" src="./img/cod.png" alt="cod-img">
         </div>
         <a class="button-link three">Our partners</a>
     </section>
@@ -157,13 +173,28 @@
     </section>
     <section id="mailing">
         <div class="video-created">
-            <video src="./video/videoplayback.mp4" poster="./img/poster.png">
+            <video id="video-play" src="./video/videoplayback.mp4" poster="./img/poster.png">
                 Video is not supported by your browser
             </video>
             <div class="video-center">
                 <img class="start-but" src="./img/start.png" alt="start video">
-                <button class="watch">Watch the video</button>
+                <button id="watch">Watch the video</button>
             </div>        
+           <div id="video-control"> 
+               <button class="but-control" id="pause">Pause</button>
+               <button class="but-control" id="stop">Stop</button>
+               <button class="but-control" id="speed-up">Up</button>
+               <button class="but-control" id="speed-down">Down</button>
+               <button class="but-control" id="speed-normal">Normal</button>
+            </div>
+            <div id="line_control">
+               <div>
+                   <input type="range" id="volume_" min=0 max=100>Sound
+               </div>
+                <div>
+                   <progress id="progress" max="100" value="0"></progress>
+                </div>
+            </div>
         </div>
         <div id="line" class="lin-3"></div>
         <h3>Subscribe to our newsletter</h3>
@@ -174,84 +205,84 @@
         </form>
         <p class="small-p">We do not send spam, and we share your data with anyone.</p>
     </section>
-    <footer>
+    <section id="footer">
         <div class="foot-block">
             <div class="contact-block">
                 <h3>Contact information</h3>
                 <div class="cont-p">
-                    <img src="./img/contact1.svg" alt="mail">
+                    <img class="svg-footer" src="./img/contact1.svg" alt="mail">
                     <p class="small-p2">test@test.ru</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact2.svg" alt="call">
+                    <img class="svg-footer" src="./img/contact2.svg" alt="call">
                     <p class="small-p2">+8 777 555 66 99</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact3.svg" alt="point">
+                    <img class="svg-footer" src="./img/contact3.svg" alt="point">
                     <p class="small-p2">Москва, Бульвар Ленина 33</p>
                 </div>
             </div>
             <div class="contact-block">
                 <h3>Key links</h3>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Home</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Our services</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Our projects</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Contacts</p>
                 </div>
             </div>
             <div class="contact-block">
                 <h3>Our projects</h3>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Address</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Address</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Address</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Address</p>
                 </div>
             </div>
             <div class="contact-block">
                 <h3>Social networks</h3>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">VK.com</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Instagram</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Facebook</p>
                 </div>
                 <div class="cont-p">
-                    <img src="./img/contact4.svg" alt="arr">
+                    <img class="svg-footer" src="./img/contact4.svg" alt="arr">
                     <p class="small-p2">Twitter</p>
                 </div>
             </div>
         </div>
         <div id="line"></div>
         <p class="small-p _rights">(c) 2019. All rights reserved.</p>
-    </footer>
+    </section>
     <script src="./script.js" defer></script>
 </body>
 </html>
