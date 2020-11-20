@@ -40,26 +40,24 @@ function openMenu() {
 burger.addEventListener("click", openMenu);
 window.addEventListener("resize", checkScreen);
 
-
 const arr_up = document.querySelector(".button_arrow");
 let _display = 600;
 
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
 window.addEventListener("scroll", () => {
-  if (getTop () > _display) {
+  if (getTop() > _display) {
     arr_up.classList.add("active_arrow");
-  }else {
+  } else {
     arr_up.classList.remove("active_arrow");
   }
 });
 
-arr_up.addEventListener("click", ()=>{
+arr_up.addEventListener("click", () => {
   window.scrollTo({
-    top:0,
+    top: 0,
   });
 });
-
 
 let _watch = document.querySelector(".start-but");
 let _pause = document.getElementById("pause");
@@ -76,61 +74,57 @@ let video_control = document.getElementById("video-control");
 let video = document.querySelector("#video-play");
 video.ontimeupdate = progressUpDate;
 
-
-function play(){
+function play() {
   video.play();
   center.style.display = "none";
   video_control.style.display = "block";
   line_control.style.display = "block";
-  
 }
 
-function pause(){
+function pause() {
   video.pause();
   center.style.display = "flex";
 }
 
-function stoP(){
+function stoP() {
   video.pause();
   video.currentTime = 0;
   center.style.display = "flex";
 }
 
-function speedUp(){
+function speedUp() {
   video.play();
   video.playbackRate = 2;
 }
 
-function speedDown(){
+function speedDown() {
   video.play();
   video.playbackRate = 0.5;
 }
 
-function speedNormal(){
+function speedNormal() {
   video.play();
   video.playbackRate = 1;
 }
 
-function volume(){
+function volume() {
   let audio = this.value;
   video.volume = audio / 100;
 }
 
-function progressUpDate(){
-  console.log(video.duration);
-  console.log(video.currentTime);
+function progressUpDate() {
   let dur = video.duration;
   let curr = video.currentTime;
-  prog.value = (100*curr)/dur; 
-
+  prog.value = (100 * curr) / dur;
 }
 
-function videoUpShow(){
+function videoUpShow(event) {
   let widthProg = this.offsetWidth;
-  let timeClick = event.offsetX;
-  this.value = (100*timeClick)/widthProg;
+  let timeClick = event.clientX;
+  let startPosProg = this.getBoundingClientRect().x;
+  let clickPercents = ((timeClick - startPosProg) * 100) / widthProg;
   video.pause();
-  video.currentTime = video.duration*(timeClick/widthProg);
+  video.currentTime = (video.duration / 100) * clickPercents;
   video.play();
 }
 
@@ -142,5 +136,3 @@ speed_down.addEventListener("click", speedDown);
 speed_normal.addEventListener("click", speedNormal);
 _volume.addEventListener("input", volume);
 prog.addEventListener("click", videoUpShow);
-
-

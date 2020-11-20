@@ -1,8 +1,8 @@
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 header,
@@ -22,8 +22,8 @@ section {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -43,21 +43,21 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 h3 {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 p {
@@ -104,8 +104,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -133,11 +133,11 @@ nav .nav_link:last-child {
   background-color: darkblue;
   color: #fff;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -146,8 +146,8 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .link {
@@ -196,8 +196,8 @@ nav .nav_link:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .link-burger {
@@ -208,19 +208,19 @@ nav .nav_link:last-child {
 .button-link {
   width: 200px;
   height: 45px;
-  background: #4985FF;
+  background: #4985ff;
   -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-          box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: white;
 }
 
@@ -266,8 +266,8 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #created .creation-icons-block .icons-block {
@@ -277,8 +277,8 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #created .creation-icons-block .icons-block .circle {
@@ -346,8 +346,8 @@ nav .nav_link:last-child {
   font-size: 16px;
   line-height: 20px;
   -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  color: #4985FF;
+  text-decoration-line: underline;
+  color: #4985ff;
 }
 
 .img-high {
@@ -359,7 +359,7 @@ nav .nav_link:last-child {
 #line {
   width: 1110px;
   height: 0;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
 }
 
 .high-icon-block {
@@ -371,8 +371,8 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .icons-high {
@@ -418,10 +418,11 @@ nav .nav_link:last-child {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20.44%, #504DC2), color-stop(80.91%, #5F12D0)), #C4C4C4;
-  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20.44%, #504dc2), color-stop(80.91%, #5f12d0)),
+    #c4c4c4;
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
 }
 
 #specialization > h2 {
@@ -429,7 +430,7 @@ nav .nav_link:last-child {
   height: 88px;
   font-size: 36px;
   line-height: 53px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin: 100px 370px 302px 0;
 }
@@ -474,7 +475,7 @@ nav .nav_link:last-child {
 }
 
 .span-h3 {
-  color: #4985FF;
+  color: #4985ff;
 }
 
 .gall-el > p {
@@ -494,7 +495,7 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  background: #F6F6F8;
+  background: #f6f6f8;
 }
 
 #products > h2 {
@@ -525,7 +526,8 @@ nav .nav_link:last-child {
 }
 
 #fon {
-  background-image: url(./img/fon.png), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15)));
+  background-image: url(./img/fon.png),
+    -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15)));
   background-image: url(./img/fon.png), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   height: 570px;
   text-align: center;
@@ -623,8 +625,9 @@ nav .nav_link:last-child {
 }
 
 .video-created #line_control #progress {
-  width: 80px;
+  width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .form-input {
@@ -641,9 +644,9 @@ nav .nav_link:last-child {
   width: 299px;
   height: 100%;
   background: #fff;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-          box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 30px 0 0 30px;
   padding-left: 33px;
 }
@@ -675,11 +678,11 @@ nav .nav_link:last-child {
 .form-input .Subscribe-input {
   width: 190px;
   height: 100%;
-  background: #4985FF;
+  background: #4985ff;
   -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-          box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+  box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
   border-radius: 0px 30px 30px 0px;
-  border: 1px solid #4985FF;
+  border: 1px solid #4985ff;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
@@ -693,7 +696,7 @@ nav .nav_link:last-child {
 
 #footer {
   height: 490px;
-  background: #F6F6F8;
+  background: #f6f6f8;
 }
 
 #footer .foot-block {
@@ -703,11 +706,11 @@ nav .nav_link:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #footer .foot-block .contact-block {
@@ -788,8 +791,8 @@ nav .nav_link:last-child {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     margin: 50px 0 50px;
   }
   #spec-gallery .gall-pro .gall-el {
@@ -983,8 +986,8 @@ nav .nav_link:last-child {
   #created .creation-icons-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -1194,8 +1197,8 @@ nav .nav_link:last-child {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   #spec-gallery .gall-pro .gall-el .foto {
     display: none;
@@ -1552,14 +1555,14 @@ nav .nav_link:last-child {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 310px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   #footer .foot-block .contact-block {
     width: 100px;
